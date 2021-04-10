@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vansh Piskel Art Shop</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <style>
+          
+        </style>
+    </head>
+    <body>
+        <h1>Vansh Piskel Art Shop</h1>
+        
+        <ul>
+            <li> <a href="index.html">Home Page</a> </li>
+            <li> <a href="input.html">Place An Order</a> </li>
+         </ul>
+         <br>
+        <!-- This is a form that is used to ship a purchase to a customer. -->
+        <form method="GET">
+            
+            <!--This label and text input are for the customer to enter in their first name (i.e.Vansh).-->
+            <label for="fname">First name:</label>
+            <input type="text" maxlength="50" id="fname" name="firstname" value="">
+        
+            <!--This label and text input are for the customer to enter in their last name (i.e.Saini).-->
+            <label for="lname">Last Name:</label>
+            <input type="text" maxlength="50" id="lname" name="lastname" value=""> 
+            <br/><br/><br/>
+
+            <!--This label and text input are for the customer to enter in their email address (i.e.VSaini@smail.pembinatrails.ca)-->
+            <label for="eaddr">Email Address:</label>
+            <input type="text" size="100" maxlength="200" id="eaddr" name="emailaddress" placeholder="Please enter your email address"/> 
+            <br/><br />
+ 
+            <!-- This label and text area are for the customer to enter the specific type of product they want (i.e. Make an orange basketball or make Goku).-->
+            <label for="desciption"><b>Describe Your 2D Object Design:</b></label>
+            <br />
+            <textarea rows="4" cols="50" name="description" id="description"></textarea>
+            <br /><br />
+            
+            <!-- These labels and dropdown menu are for the customer to choose the email deliever time from the following list: 3-day. 5-day, 7-day (3-day is checked by default).-->
+            <p> <label for="timedue">Please Choose A Due Date:</label> </p>
+            <select name="timedue" id="timedue">
+                 <option value="three-day">Three-day</option>
+                 <option value="five-day">Five-day</option>
+                 <option value="seven-day">Seven-day</option>  
+            </select>
+
+            <!-- These labels and radio buttons are for the customer to choose the amount they would like to pay for the product (1 dollar is check by default).-->
+            <p> Please Choose What Amount You Would Like To Pay:</p>
+            <label> <input type="radio" name="money" value="$1" checked="true" /> $1 </label>
+            <label> <input type="radio" name="money" value="$5"  /> $5 </label>
+            <label> <input type="radio" name="money" value="$15" /> $15 </label>
+            <br />
+
+            <!-- These labels and radio buttons are for the customer to choose the method of payment (paypal is checked by default).-->
+            <p> Please Choose Payment Method:</p>
+            <label> <input type="radio" name="payment-methods" value="credit" /> Credit </label>
+            <label> <input type="radio" name="payment-methods" value="debit"  /> Debit </label>
+            <label> <input type="radio" name="payment-methods" value="paypal" checked="true"  /> Paypal </label>
+            <br /><br />
+
+            <!-- This label and checkbox are for the customer to choose if they want email updates on their product (It is selected by default).-->
+            <label> <input type="checkbox" name="updates" checked /> Sign me up for email updates </label>
+            <br />
+
+            <!-- This label and checkbox are for the customer to choose if they want their payment information saved (It is selected by default).-->
+            <label> <input type="checkbox" name="savepaymentinfo" checked /> Save My Payment Info </label>
+            <br /><br />
+
+           <!-- This will submit the form and process the information needed for delivery. -->
+           <input type="submit"> 
+           
+           <!-- This will reset the form to the default setting. -->
+           <input type="reset"> 
+        </form>
+    </body>
+</html>
